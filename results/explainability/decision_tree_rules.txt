@@ -1,0 +1,70 @@
+|--- capital_adequacy_ratio <= -0.68
+|   |--- NCLNLS <= -0.63
+|   |   |--- profitability_ratio <= 0.90
+|   |   |   |--- LNATRES <= -0.79
+|   |   |   |   |--- class: 0
+|   |   |   |--- LNATRES >  -0.79
+|   |   |   |   |--- class: 0
+|   |   |--- profitability_ratio >  0.90
+|   |   |   |--- EQ <= -0.76
+|   |   |   |   |--- class: 1
+|   |   |   |--- EQ >  -0.76
+|   |   |   |   |--- class: 0
+|   |--- NCLNLS >  -0.63
+|   |   |--- NCLNLS <= 0.32
+|   |   |   |--- RBCT1 <= -0.67
+|   |   |   |   |--- loan_loss_reserve_ratio <= -0.41
+|   |   |   |   |   |--- class: 0
+|   |   |   |   |--- loan_loss_reserve_ratio >  -0.41
+|   |   |   |   |   |--- class: 1
+|   |   |   |--- RBCT1 >  -0.67
+|   |   |   |   |--- interest_income_ratio <= 2.04
+|   |   |   |   |   |--- class: 0
+|   |   |   |   |--- interest_income_ratio >  2.04
+|   |   |   |   |   |--- class: 1
+|   |   |--- NCLNLS >  0.32
+|   |   |   |--- RBC1RWAJ <= -0.19
+|   |   |   |   |--- tier1_capital_ratio <= -0.83
+|   |   |   |   |   |--- class: 1
+|   |   |   |   |--- tier1_capital_ratio >  -0.83
+|   |   |   |   |   |--- class: 1
+|   |   |   |--- RBC1RWAJ >  -0.19
+|   |   |   |   |--- DEP <= -0.01
+|   |   |   |   |   |--- class: 0
+|   |   |   |   |--- DEP >  -0.01
+|   |   |   |   |   |--- class: 0
+|--- capital_adequacy_ratio >  -0.68
+|   |--- RBCT1 <= -0.67
+|   |   |--- LNLSNET <= -0.70
+|   |   |   |--- class: 0
+|   |   |--- LNLSNET >  -0.70
+|   |   |   |--- ERNASTR <= 0.30
+|   |   |   |   |--- LNRESNCR <= -0.41
+|   |   |   |   |   |--- class: 1
+|   |   |   |   |--- LNRESNCR >  -0.41
+|   |   |   |   |   |--- class: 0
+|   |   |   |--- ERNASTR >  0.30
+|   |   |   |   |--- class: 0
+|   |--- RBCT1 >  -0.67
+|   |   |--- loan_loss_reserve_ratio <= -1.33
+|   |   |   |--- debt_ratio <= 0.57
+|   |   |   |   |--- interest_income_ratio <= -1.61
+|   |   |   |   |   |--- class: 0
+|   |   |   |   |--- interest_income_ratio >  -1.61
+|   |   |   |   |   |--- class: 0
+|   |   |   |--- debt_ratio >  0.57
+|   |   |   |   |--- ASSET <= 1.82
+|   |   |   |   |   |--- class: 0
+|   |   |   |   |--- ASSET >  1.82
+|   |   |   |   |   |--- class: 1
+|   |   |--- loan_loss_reserve_ratio >  -1.33
+|   |   |   |--- EEFFR <= -1.53
+|   |   |   |   |--- EEFFR <= -1.54
+|   |   |   |   |   |--- class: 0
+|   |   |   |   |--- EEFFR >  -1.54
+|   |   |   |   |   |--- class: 1
+|   |   |   |--- EEFFR >  -1.53
+|   |   |   |   |--- ROE <= -3.63
+|   |   |   |   |   |--- class: 0
+|   |   |   |   |--- ROE >  -3.63
+|   |   |   |   |   |--- class: 0
